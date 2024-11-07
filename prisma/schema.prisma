@@ -14,7 +14,7 @@ datasource db {
 }
 
 model Transaction {
-  is            String                   @id @default(uuid())
+  id            String                   @id @default(uuid())
   name          String
   type          TransactionType
   amount        Decimal                  @db.Decimal(10, 2)
